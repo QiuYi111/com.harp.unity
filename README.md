@@ -1,6 +1,6 @@
-# Harp Unity 极简插件包 (com.harp.unity)
+# Harp Unity 插件包 (com.harp.unity)
 
-这是一个为 Unity 开发的极简 Harp 设备通信插件包。它通过剥离 `Bonsai.Core` 的复杂依赖，将 `Harp.Behavior` 和 `Bonsai.Harp` 的核心功能整合进一个标准的 Unity Package Manager (UPM) 包中。
+这是一个为 Unity 开发的极简 Harp 设备通信插件包。它通过剥离 `Bonsai.Core` 的复杂依赖，将 `Harp.Behavior` 和 `Bonsai.Harp` 的核心功能整合进一个标准的 Unity Package Manager 包中。
 
 ## 主要特性
 
@@ -17,6 +17,7 @@
    ```json
    "com.harp.unity": "file:../../trird_party/com.harp.unity"
    ```
+
    *(路径请根据你的实际目录结构调整)*
 
 ## 使用示例
@@ -49,11 +50,14 @@ _harp.DeviceMessages.Subscribe(message => {
 ## 疑难解答
 
 ### 1. Serial Port 平台不支持错误
+
 如果你在控制台看到 `System.IO.Ports is currently only supported on Windows`，请确保：
+
 - 插件包中的 `System.IO.Ports.dll.meta` 文件已启用 "Editor" 平台。
 - 重启 Unity 以清除旧的程序集缓存。
 
 ### 2. 编译冲突
+
 如果出现重复类冲突，请检查并删除 `Assets/Plugins` 下旧的 Harp/Bonsai 相关 DLL 文件。本插件包已内建所有必要依赖。
 
 ## 目录结构
