@@ -1,0 +1,15 @@
+{
+    "name": "com.harp.unity",
+    "displayName": "Harp Unity Plugin",
+    "version": "1.0.0",
+    "unity": "2021.3",
+    "description": "Minimal Harp device communication library for Unity. Includes Harp.Behavior device interface and Bonsai.Harp protocol layer.",
+    "keywords": [
+        "Harp",
+        "Serial",
+        "Device"
+    ],
+    "category": "Hardware",
+    "dependencies": {}
+}
+ 
